@@ -4,25 +4,35 @@
         Tip Calculator
     </title>
     <head>
-        <h1><center>Tip Calculator App</center></h1>
-        <h3><center>By Amber Bacon</center></h3>
-        <br>
-            <script type="stylesheet" src="styles.css"></script>
+        <div class="header">
+            <h1><center>Tip Calculator App</center></h1>
+            <h3><center>By Amber Bacon</center></h3>
+            <br>
+        </div>
+        <style>
+            .header {
+                font-size: 20px;
+                color: black;
+                background-color: white;            
+                }
+        </style>
     </head>
         <body>
-            <center><form method="POST">
-                <label>Meal Subtotal</label>
-                <input type="float" name="meal"/>
-                <br><br>
-                <label>Tax Percentage</label>  
-                <input type="float" name="tax"/>
-                <br><br>
-                <label>Tip Percentage</label>
-                <input type="float" name="tip"/>
-                <br><br>
-                <label>Click here to:</label>
-                <input type="submit" value="Submit"/>
-                <input type="reset" value="Reset"/>
-            </form></center>
+            <div class="form">
+                <center><form method="POST">
+                    <label>Meal Subtotal</label>
+                    <input type="float" name="meal"/>
+                    <br><br>
+                    <label>Tax Percentage</label>  
+                    <input type="float" name="tax"/>
+                    <br><br>
+                    <label>Tip Percentage</label>
+                    <input type="float" name="tip"/>
+                    <br><br>
+                    <label>Click here to:</label>
+                    <input type="submit" value="Submit"/>
+                    <input type="reset" value="Reset"/>
+                </form></center>
+            </div>
         </body>
 </html>
